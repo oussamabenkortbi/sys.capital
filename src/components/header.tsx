@@ -1,16 +1,19 @@
 "use client"
 
 import React, { useState } from 'react'
-import { Toggle } from '../toggle'
+import { Toggle } from './toggle'
+import { Menu, X } from 'lucide-react'
+import SysCapitalLogo from './home/logo'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="fixed h-16 top-0 left-0 right-0 bg-white/95 dark:bg-black/95 backdrop-blur-sm border-b border-gray-100 dark:border-black z-50 select-text">
+    <header className="fixed h-24 top-0 left-0 right-0 bg-white/90 dark:bg-black/90 backdrop-blur-sm border-b border-gray-100 dark:border-black z-50 select-text">
+      <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-sky-500 via-emerald-500 to-purple-500 opacity-70" />
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6 sm:px-8 font-extrabold tracking-widest text-black dark:text-white">
-        <a href="#" className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-none hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
-          sys<span className="text-gray-600 dark:text-gray-400">.</span>capital
+        <a href="#" className="tracking-tight leading-none transition-colors">
+          <SysCapitalLogo />
         </a>
 
         <div className="flex items-center space-x-8">
@@ -30,11 +33,11 @@ const Header = () => {
         <div className="flex items-center space-x-4 lg:hidden">
           <Toggle />
           <button 
-            className="text-4xl font-black leading-none tracking-widest hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
+            className="inline-flex items-center justify-center size-10 rounded-md hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
-            {isMenuOpen ? '×' : '≡'}
+            {isMenuOpen ? <X className="size-6" aria-hidden="true" /> : <Menu className="size-6" aria-hidden="true" />}
           </button>
         </div>
       </div>

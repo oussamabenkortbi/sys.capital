@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
+import { ChevronDown, HelpCircle } from 'lucide-react'
 
 const faqData = [
   {
@@ -29,21 +30,31 @@ const FAQ = () => {
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight mb-14 sm:mb-16 md:mb-20 text-center">
         FREQUENTLY ASKED QUESTIONS
       </h2>
-      <dl className="space-y-8 sm:space-y-10 md:space-y-12">
+      <dl className="divide-y divide-gray-200 dark:divide-gray-800 rounded-2xl ring-1 ring-gray-200 dark:ring-gray-800 overflow-hidden">
         {faqData.map(({ question, answer }, i) => (
-          <div 
-            key={i} 
-            className="cursor-pointer group"
-            onClick={() => setOpenIndex(openIndex === i ? null : i)}
-          >
-            <dt className="text-2xl sm:text-3xl font-black uppercase tracking-wide mb-2 sm:mb-3 group-hover:opacity-80 transition-opacity">
-              {question}
-            </dt>
-            <dd 
-              className={`text-base sm:text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out overflow-hidden ${
-                openIndex === i 
-                  ? 'max-h-96 opacity-100' 
-                  : 'max-h-0 opacity-0'
+          <div key={i}>
+            <button
+              type="button"
+              className="w-full flex items-center justify-between gap-4 text-left p-5 sm:p-6 hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+              aria-expanded={openIndex === i}
+              onClick={() => setOpenIndex(openIndex === i ? null : i)}
+            >
+              <div className="flex items-start gap-3">
+                <span className="inline-flex size-8 items-center justify-center rounded-full bg-sky-500 text-white mt-1">
+                  <HelpCircle className="size-4" aria-hidden="true" />
+                </span>
+                <dt className="text-2xl sm:text-3xl font-black uppercase tracking-wide">
+                  {question}
+                </dt>
+              </div>
+              <ChevronDown
+                className={`size-6 flex-shrink-0 transition-transform ${openIndex === i ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+              />
+            </button>
+            <dd
+              className={`px-6 pb-6 -mt-2 text-base sm:text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out overflow-hidden ${
+                openIndex === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
               {answer}
