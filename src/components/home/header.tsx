@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useState } from 'react'
-import { ThemeToggle } from '../theme-toggle'
+import { Toggle } from '../toggle'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -23,12 +23,12 @@ const Header = () => {
           </nav>
           
           <div className="hidden md:block ml-4">
-            <ThemeToggle />
+            <Toggle />
           </div>
         </div>
 
         <div className="flex items-center space-x-4 md:hidden">
-          <ThemeToggle />
+          <Toggle />
           <button 
             className="text-4xl font-black leading-none tracking-widest hover:text-gray-700 dark:hover:text-gray-300 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}

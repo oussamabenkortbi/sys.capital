@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import { Geist, Geist_Mono } from 'next/font/google'
 
 const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
+})
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
+
 
 export const metadata: Metadata = {
   title: "Sys.Capital",
@@ -27,6 +29,25 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        {/* Initialize theme before hydration to avoid FOUC */}
+        <Script id="theme-initializer" strategy="beforeInteractive">
+          {`
+            (function() {
+              try {
+                var stored = localStorage.getItem('theme');
+                var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                var theme = stored || 'system';
+                var shouldDark = theme === 'dark' || (theme === 'system' && systemDark);
+                var root = document.documentElement;
+                if (shouldDark) {
+                  root.classList.add('dark');
+                } else {
+                  root.classList.remove('dark');
+                }
+              } catch (e) { /* no-op */ }
+            })();
+          `}
+        </Script>
         {children}
       </body>
     </html>
