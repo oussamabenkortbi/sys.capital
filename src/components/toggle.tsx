@@ -6,13 +6,28 @@ import { Sun, Moon, Laptop } from "lucide-react";
 type Theme = "light" | "dark" | "system";
 
 export const Toggle = () => {
-  const [theme, setTheme] = useState<Theme>("system");
+  const readCookie = (name: string): string | null => {
+    if (typeof document === "undefined") return null;
+    const match = document.cookie.match(
+      new RegExp("(?:^|; )" + name.replace(/([.$?*|{}()\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)")
+    );
+    return match ? decodeURIComponent(match[1]) : null;
+  };
 
-  // Initialize from localStorage on mount
+  const writeCookie = (name: string, value: string, days = 365) => {
+    if (typeof document === "undefined") return;
+    const maxAge = days * 24 * 60 * 60;
+    document.cookie = `${name}=${encodeURIComponent(value)}; Path=/; Max-Age=${maxAge}; SameSite=Lax`;
+  };
+
+  // Initialize from cookie (fallback to localStorage) on mount
+  const [theme, setTheme] = useState<Theme>("system");
   useEffect(() => {
     try {
-      const stored = (localStorage.getItem("theme") as Theme | null) ?? "system";
-      setTheme(stored);
+      const fromCookie = (readCookie("theme") as Theme | null);
+      const stored = (localStorage.getItem("theme") as Theme | null);
+      const initial: Theme = fromCookie ?? stored ?? "system";
+      setTheme(initial);
     } catch {
       // no-op
     }
@@ -41,6 +56,11 @@ export const Toggle = () => {
       const next: Theme = prev === "light" ? "dark" : prev === "dark" ? "system" : "light";
       try {
         localStorage.setItem("theme", next);
+      } catch {
+        // no-op
+      }
+      try {
+        writeCookie("theme", next);
       } catch {
         // no-op
       }

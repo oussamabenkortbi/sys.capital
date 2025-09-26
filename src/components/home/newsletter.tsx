@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { Mail } from 'lucide-react'
 
@@ -9,6 +9,14 @@ const Newsletter = () => {
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [mounted, setMounted] = useState(false)
+
+  // Avoid hydration mismatch by rendering only after the component is mounted
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -34,8 +42,9 @@ const Newsletter = () => {
         setSubmitted(true)
         setEmail('')
       })
-      .catch((err: any) => {
-        setError(err?.message || 'Something went wrong. Please try again later.')
+      .catch((err: unknown) => {
+        const message = err instanceof Error ? err.message : 'Something went wrong. Please try again later.'
+        setError(message)
       })
       .finally(() => setLoading(false))
   }
@@ -48,6 +57,8 @@ const Newsletter = () => {
         width={1600}
         height={900}
         className="absolute inset-0 size-full object-cover object-center opacity-10"
+        priority
+        aria-hidden
       />
       <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/85 to-white/90 dark:from-black/90 dark:via-black/80 dark:to-black/90" />
 
@@ -107,3 +118,4 @@ const Newsletter = () => {
 }
 
 export default Newsletter
+

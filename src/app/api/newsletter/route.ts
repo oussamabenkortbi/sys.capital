@@ -2,11 +2,6 @@ import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { newsletterWelcomeTemplate } from '@/lib/emailTemplates'
 
-// Expect environment variables in .env.local
-// aqaRESEND_API_KEY=... (required)
-// NEWSLETTER_FROM="Sys.Capital <no-reply@yourdomain.com>" (must be a verified domain in Resend)
-// NEWSLETTER_BCC=owner@example.com (optional, to notify you of new subs)
-
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
@@ -38,8 +33,9 @@ export async function POST(request: Request) {
     })
 
     return NextResponse.json({ ok: true })
-  } catch (err: any) {
+  } catch (err: unknown) {
     console.error('Newsletter subscribe error', err)
     return NextResponse.json({ error: 'Failed to subscribe' }, { status: 500 })
   }
 }
+

@@ -1,4 +1,4 @@
-import { Boxes, Smartphone, Workflow, LifeBuoy, Building2 } from 'lucide-react'
+import { Boxes, Workflow, Building2 } from 'lucide-react'
 
 const Footer = () => (
   <footer className="relative bg-black text-white select-text py-16 sm:py-20 px-6 overflow-hidden">
@@ -58,3 +58,4 @@ const Footer = () => (
 )
 
 export default Footer
+
