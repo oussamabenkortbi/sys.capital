@@ -13,13 +13,13 @@ const FeaturedProducts = () => {
       name: 'THERMAL PRINTERS',
       price: 'FROM 15,000 DA',
       details: 'USB, Fast Printing, Auto-cutter, Easy Setup',
-      image: 'https://images.unsplash.com/photo-1583522898731-5f1d3b5dc2a8?auto=format&fit=crop&w=1600&q=60',
+      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1600&q=60',
     },
     {
       name: 'POS HARDWARE BUNDLES',
       price: 'FROM 85,000 DA',
       details: 'Touch Screen, Cash Drawer, Scanner, Complete Set',
-      image: 'https://images.unsplash.com/photo-1556742393-d75f468bfcb0?auto=format&fit=crop&w=1600&q=60',
+      image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1600&q=60',
     },
   ] as const
 

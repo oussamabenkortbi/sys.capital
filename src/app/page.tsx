@@ -11,23 +11,31 @@ import FAQ from "@/components/home/faq";
 import CTA from "@/components/home/cta";
 import Newsletter from "@/components/home/newsletter";
 import Contact from "@/components/home/contact";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="pt-8">
-      <Hero />
-      <Solutions />
-      <Services />
-      <FeaturedProducts />
-      <About />
-      <Team />
-      <Testimonials />
-      <Partners />
-      <BlogHighlights />
-      <FAQ />
-      <CTA />
-      <Newsletter />
-      <Contact />
-    </main>
+    <div className="bg-white dark:bg-black text-black dark:text-white select-text overflow-x-hidden min-h-screen">
+      <Header />
+
+      <main className="pt-12">
+        <Hero />
+        <Solutions />
+        <Services />
+        <FeaturedProducts />
+        <About />
+        <Team />
+        <Testimonials />
+        <Partners />
+        <BlogHighlights />
+        <FAQ />
+        <CTA />
+        <Newsletter />
+        <Contact />
+      </main>
+
+      <Footer />
+    </div>
   );
 }
