@@ -7,13 +7,13 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="bg-white dark:bg-black py-32 px-6 text-black dark:text-white">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
+    <section id="services" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 text-black dark:text-white">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-24">
         {services.map(({ title, sub, description }, i) => (
           <div key={i} className="flex flex-col select-text">
-            <h2 className="text-6xl md:text-7xl font-black tracking-tighter leading-none mb-4">{title}</h2>
-            <h3 className="text-2xl font-semibold uppercase mb-6 tracking-widest opacity-70 dark:opacity-80">{sub}</h3>
-            <p className="text-xl font-light tracking-wide opacity-60 dark:opacity-70">{description}</p>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter leading-none mb-3 sm:mb-4">{title}</h2>
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold uppercase mb-4 sm:mb-6 tracking-widest opacity-70 dark:opacity-80">{sub}</h3>
+            <p className="text-base sm:text-lg md:text-xl font-light tracking-wide opacity-60 dark:opacity-70">{description}</p>
           </div>
         ))}
       </div>

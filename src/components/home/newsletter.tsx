@@ -17,10 +17,10 @@ const Newsletter = () => {
 
   return (
     <section className="bg-white dark:bg-black py-24 px-6 max-w-4xl mx-auto text-black dark:text-white select-text text-center">
-      <h2 className="text-6xl md:text-7xl font-extrabold uppercase tracking-tight mb-8">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight mb-6 sm:mb-8">
         STAY UPDATED
       </h2>
-      <p className="text-lg md:text-xl font-light tracking-wide mb-12 max-w-2xl mx-auto opacity-80 dark:opacity-70">
+      <p className="text-base sm:text-lg md:text-xl font-light tracking-wide mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto opacity-80 dark:opacity-70">
         Subscribe to sys.capital newsletter for the latest updates on software releases, hardware offers, and business solutions.
       </p>
 

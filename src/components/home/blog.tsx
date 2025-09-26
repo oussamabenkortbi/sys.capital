@@ -7,14 +7,14 @@ const posts = [
 const BlogHighlights = () => {
   return (
     <section className="bg-gray-50 dark:bg-black py-24 px-6 max-w-6xl mx-auto text-black dark:text-white select-text">
-      <h2 className="text-7xl font-extrabold uppercase tracking-tight mb-20 text-center">
+      <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight mb-14 sm:mb-16 md:mb-20 text-center">
         FROM OUR BLOG
       </h2>
-      <ul className="space-y-12 text-center">
+      <ul className="space-y-8 sm:space-y-10 md:space-y-12 text-center">
         {posts.map(({ title, date }, i) => (
           <li key={i} className="group cursor-pointer">
-            <p className="text-4xl font-black uppercase tracking-widest mb-2 group-hover:opacity-80 transition-opacity">{title}</p>
-            <p className="font-light tracking-wide uppercase opacity-60 dark:opacity-70">{date}</p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-widest mb-1 sm:mb-2 group-hover:opacity-80 transition-opacity">{title}</p>
+            <p className="text-xs sm:text-sm font-light tracking-wide uppercase opacity-60 dark:opacity-70">{date}</p>
           </li>
         ))}
       </ul>

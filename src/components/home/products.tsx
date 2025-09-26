@@ -6,17 +6,17 @@ const FeaturedProducts = () => {
   ]
 
   return (
-    <section id="products" className="bg-white dark:bg-black py-32 px-6 text-black dark:text-white select-text">
-      <div className="max-w-6xl mx-auto space-y-24">
+    <section id="products" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 text-black dark:text-white select-text">
+      <div className="max-w-6xl mx-auto space-y-16 sm:space-y-20 md:space-y-24">
         {products.map(({ name, price, details }, i) => (
           <article 
             key={i} 
-            className="flex flex-col md:flex-row justify-between items-center gap-8"
+            className="flex flex-col md:flex-row justify-between items-center gap-6 sm:gap-8"
           >
-            <h2 className="flex-1 text-7xl md:text-8xl font-extrabold tracking-tight leading-none">{name}</h2>
-            <div className="flex-1 text-right space-y-2">
-              <p className="text-4xl font-bold tracking-widest">{price}</p>
-              <p className="text-xl uppercase font-light opacity-60 dark:opacity-70 tracking-wide max-w-md">{details}</p>
+            <h2 className="flex-1 text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-none text-center md:text-left">{name}</h2>
+            <div className="flex-1 text-center md:text-right space-y-1 sm:space-y-2">
+              <p className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-widest">{price}</p>
+              <p className="text-base sm:text-lg md:text-xl uppercase font-light opacity-60 dark:opacity-70 tracking-wide max-w-md md:ml-auto mx-auto">{details}</p>
             </div>
           </article>
         ))}
@@ -24,11 +24,11 @@ const FeaturedProducts = () => {
         <div className="text-center">
           <a 
             href="#store" 
-            className="inline-block text-3xl font-bold tracking-widest uppercase border-4 border-black dark:border-white px-12 py-5 hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition"
+            className="inline-block text-xl sm:text-2xl md:text-3xl font-bold tracking-widest uppercase border-2 sm:border-4 border-black dark:border-white px-8 sm:px-12 py-4 sm:py-5 hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition"
           >
             Visit Store
           </a>
-          <p className="mt-4 text-sm font-light opacity-50 dark:opacity-60 uppercase tracking-wide">store.sys.capital</p>
+          <p className="mt-3 sm:mt-4 text-xs sm:text-sm font-light opacity-50 dark:opacity-60 uppercase tracking-wide">store.sys.capital</p>
         </div>
       </div>
     </section>

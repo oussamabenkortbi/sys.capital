@@ -26,21 +26,21 @@ const FAQ = () => {
 
   return (
     <section className="bg-white dark:bg-black py-24 px-6 max-w-4xl mx-auto text-black dark:text-white select-text">
-      <h2 className="text-7xl font-extrabold uppercase tracking-tight mb-20 text-center">
+      <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight mb-14 sm:mb-16 md:mb-20 text-center">
         FREQUENTLY ASKED QUESTIONS
       </h2>
-      <dl className="space-y-12">
+      <dl className="space-y-8 sm:space-y-10 md:space-y-12">
         {faqData.map(({ question, answer }, i) => (
           <div 
             key={i} 
             className="cursor-pointer group"
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
           >
-            <dt className="text-3xl font-black uppercase tracking-wide mb-4 group-hover:opacity-80 transition-opacity">
+            <dt className="text-2xl sm:text-3xl font-black uppercase tracking-wide mb-2 sm:mb-3 group-hover:opacity-80 transition-opacity">
               {question}
             </dt>
             <dd 
-              className={`text-xl font-light tracking-wide transition-all duration-300 ease-in-out overflow-hidden ${
+              className={`text-base sm:text-lg md:text-xl font-light tracking-wide transition-all duration-300 ease-in-out overflow-hidden ${
                 openIndex === i 
                   ? 'max-h-96 opacity-100' 
                   : 'max-h-0 opacity-0'

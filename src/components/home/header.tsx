@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="fixed h-16 top-0 left-0 right-0 bg-white/95 dark:bg-black/95 backdrop-blur-sm border-b border-gray-100 dark:border-black z-50 select-text">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6 font-extrabold tracking-widest text-black dark:text-white">
-        <a href="#" className="text-4xl font-black tracking-tight leading-none hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
+        <a href="#" className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-none hover:text-gray-700 dark:hover:text-gray-300 transition-colors">
           sys<span className="text-gray-600 dark:text-gray-400">.</span>capital
         </a>
 
