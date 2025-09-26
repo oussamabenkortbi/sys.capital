@@ -1,8 +1,8 @@
 const About = () => {
   return (
-    <section id="about" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 text-black dark:text-white select-text">
+    <section id="about" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 sm:px-8 text-black dark:text-white select-text">
       <div className="max-w-5xl mx-auto text-center space-y-10 sm:space-y-14 md:space-y-16">
-        <h2 className="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight uppercase leading-[1.05]">
+        <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight uppercase leading-[1.05]">
           EMPOWERING <br />
           ALGERIAN BUSINESSES <br />
           SINCE 2020

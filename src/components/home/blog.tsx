@@ -6,7 +6,7 @@ const posts = [
 
 const BlogHighlights = () => {
   return (
-    <section className="bg-gray-50 dark:bg-black py-24 px-6 max-w-6xl mx-auto text-black dark:text-white select-text">
+    <section className="bg-gray-50 dark:bg-black py-24 px-6 sm:px-8 max-w-6xl mx-auto text-black dark:text-white select-text">
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight mb-14 sm:mb-16 md:mb-20 text-center">
         FROM OUR BLOG
       </h2>

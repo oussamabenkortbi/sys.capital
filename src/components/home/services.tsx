@@ -7,7 +7,7 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 text-black dark:text-white">
+    <section id="services" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 sm:px-8 text-black dark:text-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 md:gap-24">
         {services.map(({ title, sub, description }, i) => (
           <div key={i} className="flex flex-col select-text">

@@ -18,7 +18,7 @@ const Testimonials = () => {
   ]
 
   return (
-    <section className="bg-white dark:bg-black py-24 px-6 text-black dark:text-white max-w-6xl mx-auto select-text">
+    <section className="bg-white dark:bg-black py-24 px-6 sm:px-8 text-black dark:text-white max-w-6xl mx-auto select-text">
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight mb-14 sm:mb-16 md:mb-20 text-center">
         CLIENT <br /> TESTIMONIALS
       </h2>

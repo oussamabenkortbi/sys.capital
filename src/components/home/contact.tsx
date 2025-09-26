@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <section id="contact" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 text-black dark:text-white max-w-4xl mx-auto select-text">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase tracking-tight text-center mb-12 sm:mb-14 md:mb-16">
+    <section id="contact" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 sm:px-8 text-black dark:text-white max-w-4xl mx-auto select-text">
+      <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight text-center mb-12 sm:mb-14 md:mb-16">
         GET IN TOUCH
       </h2>
       

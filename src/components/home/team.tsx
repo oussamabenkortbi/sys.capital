@@ -5,7 +5,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <section className="bg-white dark:bg-black py-24 px-6 max-w-5xl mx-auto text-black dark:text-white select-text">
+    <section className="bg-white dark:bg-black py-24 px-6 sm:px-8 max-w-5xl mx-auto text-black dark:text-white select-text">
       <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight mb-14 sm:mb-16 md:mb-20 text-center">
         MEET THE TEAM
       </h2>

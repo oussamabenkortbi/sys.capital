@@ -16,11 +16,11 @@ const Newsletter = () => {
   }
 
   return (
-    <section className="bg-white dark:bg-black py-24 px-6 max-w-4xl mx-auto text-black dark:text-white select-text text-center">
-      <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight mb-6 sm:mb-8">
+    <section className="bg-white dark:bg-black py-24 px-6 sm:px-8 max-w-4xl mx-auto text-black dark:text-white select-text text-center">
+      <h2 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight mb-6 sm:mb-8">
         STAY UPDATED
       </h2>
-      <p className="text-base sm:text-lg md:text-xl font-light tracking-wide mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto opacity-80 dark:opacity-70">
+      <p className="text-base sm:text-lg lg:text-xl font-light tracking-wide mb-8 sm:mb-10 lg:mb-12 max-w-2xl mx-auto opacity-80 dark:opacity-70">
         Subscribe to sys.capital newsletter for the latest updates on software releases, hardware offers, and business solutions.
       </p>
 
@@ -39,8 +39,8 @@ const Newsletter = () => {
             <div className="flex-grow relative">
               <input
                 type="email"
-                placeholder="Enter your email address"
-                className="w-full text-lg md:text-xl uppercase font-light tracking-wide px-6 py-4 border-2 border-black dark:border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-black/40 dark:placeholder-white/40 bg-transparent transition-all"
+                placeholder="Enter your email"
+                className="w-full text-lg lg:text-xl uppercase font-light tracking-wide px-6 py-4 border-2 border-black dark:border-white/30 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder-black/40 dark:placeholder-white/40 bg-transparent transition-all"
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
@@ -54,7 +54,7 @@ const Newsletter = () => {
             </div>
             <button
               type="submit"
-              className="px-8 py-4 text-lg md:text-xl font-extrabold uppercase tracking-widest border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300 flex-shrink-0"
+              className="px-8 py-4 text-lg lg:text-xl font-extrabold uppercase tracking-widest border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300 flex-shrink-0"
             >
               SUBSCRIBE
             </button>

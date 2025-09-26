@@ -7,9 +7,9 @@ const Solutions = () => {
   ]
 
   return (
-    <section id="software" className="bg-white dark:bg-black min-h-screen px-6 py-24 sm:py-28 md:py-32 text-black dark:text-white select-text">
+    <section id="software" className="bg-white dark:bg-black min-h-screen px-6 sm:px-8 py-24 sm:py-28 md:py-32 text-black dark:text-white select-text">
       <div className="max-w-6xl mx-auto text-center space-y-16 sm:space-y-24 md:space-y-32">
-        <h2 className="text-5xl sm:text-7xl md:text-8xl font-extrabold uppercase tracking-tight leading-[1.05]">
+        <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight leading-[1.05]">
           OUR <br /> SOFTWARE <br /> SOLUTIONS
         </h2>
 

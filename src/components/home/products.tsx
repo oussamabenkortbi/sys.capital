@@ -6,7 +6,7 @@ const FeaturedProducts = () => {
   ]
 
   return (
-    <section id="products" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 text-black dark:text-white select-text">
+    <section id="products" className="bg-white dark:bg-black py-24 sm:py-28 md:py-32 px-6 sm:px-8 text-black dark:text-white select-text">
       <div className="max-w-6xl mx-auto space-y-16 sm:space-y-20 md:space-y-24">
         {products.map(({ name, price, details }, i) => (
           <article 
