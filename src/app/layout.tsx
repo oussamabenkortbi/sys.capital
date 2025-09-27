@@ -2,18 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import { cookies } from "next/headers";
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Nunito } from 'next/font/google';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const nunito = Nunito({
   subsets: ['latin'],
 })
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
-
 
 export const metadata: Metadata = {
   title: "Sys.Capital",
@@ -37,7 +30,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className={initialDark ? "dark" : undefined}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nunito.className} antialiased`}
       >
         {/* Initialize theme from cookie before hydration to avoid FOUC and mismatches */}
         <Script id="theme-cookie-initializer" strategy="beforeInteractive">

@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen mt-6 flex flex-col justify-center items-center bg-white dark:bg-black px-6 sm:px-8 text-black dark:text-white overflow-hidden">
       <Image
-        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=60"
+        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=2000&q=60"
         alt="Abstract business systems background"
         width={2000}
         height={1200}
@@ -50,3 +50,4 @@ const Hero = () => {
 }
 
 export default Hero
+
