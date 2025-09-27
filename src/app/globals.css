@@ -3,6 +3,24 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* shadcn-style semantic tokens */
+  --muted: 240 5% 96%;
+  --muted-foreground: 240 4% 46%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 250 100% 60%; /* base violet */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 200 100% 52%; /* cyan */
+  --secondary-foreground: 0 0% 0%;
+  --accent: 280 100% 65%; /* fuchsia */
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 6% 90%;
+  --input: 240 6% 90%;
+  --ring: var(--primary);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
@@ -12,12 +30,45 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  /* map semantic tokens to Tailwind v4 color slots */
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --muted: 240 3% 12%;
+    --muted-foreground: 240 5% 64%;
+    --card: 240 6% 8%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 6% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 250 100% 70%;
+    --primary-foreground: 240 6% 8%;
+    --secondary: 200 100% 60%;
+    --secondary-foreground: 240 6% 8%;
+    --accent: 280 100% 70%;
+    --accent-foreground: 240 6% 8%;
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: var(--primary);
   }
 }
 
@@ -25,4 +76,47 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+@utility gradient-text {
+  background-image: linear-gradient(
+    90deg,
+    hsl(var(--primary)) 0%,
+    hsl(var(--secondary)) 50%,
+    hsl(var(--accent)) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility gradient-border {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    background: linear-gradient(
+      90deg,
+      hsl(var(--primary)),
+      hsl(var(--secondary)),
+      hsl(var(--accent))
+    );
+    z-index: -1;
+  }
+}
+
+@utility prose-gradient {
+  & h1,
+  & h2,
+  & h3 {
+    @apply gradient-text font-extrabold tracking-tight;
+  }
+}
+
+@utility glass {
+  background: color-mix(in oklab, var(--background) 84%, transparent);
+  backdrop-filter: blur(8px);
 }
