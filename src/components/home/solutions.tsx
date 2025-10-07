@@ -7,7 +7,7 @@ const SoftwareSolutions = () => {
       name: "CRM",
       tagline: "إدارة علاقات العملاء",
       description:
-        "تسهيل التواصل مع العملاء وزيادة المبيعات بالأتمتة الذكية والتحليلات الدقيقة",
+        "تحسين التواصل مع العملاء وزيادة المبيعات من خلال الأتمتة الذكية والتحليلات المتقدمة",
       url: "crm.sys.capital",
       color: "#0ea5e9",
       icon: Users,
@@ -16,7 +16,8 @@ const SoftwareSolutions = () => {
     {
       name: "ERP",
       tagline: "تخطيط موارد المؤسسات",
-      description: "توحيد جميع عمليات الأعمال في نظام متكامل لأقصى كفاءة وتحكم",
+      description:
+        "دمج جميع عمليات الأعمال في نظام واحد متكامل لتحقيق أقصى كفاءة وتحكم",
       url: "erp.sys.capital",
       color: "#22c55e",
       icon: Boxes,
@@ -26,7 +27,7 @@ const SoftwareSolutions = () => {
       name: "POS",
       tagline: "أنظمة نقاط البيع",
       description:
-        "حل بيع عصري مع إدارة المخزون الفوري والدفع وتحليلات العملاء",
+        "نظام بيع متطور مع إدارة فورية للمخزون والمدفوعات وتحليلات شاملة للعملاء",
       url: "pos.sys.capital",
       color: "#f59e0b",
       icon: CreditCard,
@@ -35,7 +36,8 @@ const SoftwareSolutions = () => {
     {
       name: "HR",
       tagline: "إدارة الموارد البشرية",
-      description: "حزمة كاملة للتوظيف، الرواتب، تتبع الأداء، ومشاركة الموظفين",
+      description:
+        "نظام متكامل للتوظيف والرواتب ومتابعة الأداء وتطوير الموظفين",
       url: "hr.sys.capital",
       color: "#a855f7",
       icon: BriefcaseBusiness,
@@ -69,20 +71,14 @@ const SoftwareSolutions = () => {
             <div className="h-px w-12 bg-gradient-to-l from-transparent to-pink-400" />
           </div>
 
-          <h2
-            className="text-5xl lg:text-6xl font-black text-slate-900 mb-3"
-          >
-            حلول برمجية متكاملة
+          <h2 className="text-5xl lg:text-6xl font-black text-slate-900 mb-3">
+            أنظمة إدارية متكاملة
           </h2>
-          <h2
-            className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-violet-600 via-purple-600 to-pink-600 bg-clip-text text-transparent"
-          >
-            لإدارة أعمالك بذكاء
+          <h2 className="text-5xl lg:text-6xl font-black bg-gradient-to-r from-violet-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+            لإدارة ذكية وفعّالة لأعمالك
           </h2>
-          <p
-            className="text-xl text-slate-600 mt-6 max-w-3xl mx-auto"
-          >
-            أنظمة مصممة خصيصاً لتلبية احتياجات الأعمال الجزائرية 🇩🇿
+          <p className="text-xl text-slate-600 mt-6 max-w-3xl mx-auto">
+            حلول مصممة خصيصاً لتناسب احتياجات السوق الجزائري 🇩🇿
           </p>
         </div>
 
@@ -170,14 +166,10 @@ const SoftwareSolutions = () => {
                         <h3 className="text-3xl font-black text-slate-900 mb-2 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-violet-600 group-hover:to-purple-600 group-hover:bg-clip-text transition-all duration-300">
                           {solution.name}
                         </h3>
-                        <p
-                          className="text-slate-600 font-semibold mb-3"
-                        >
+                        <p className="text-slate-600 font-semibold mb-3">
                           {solution.tagline}
                         </p>
-                        <p
-                          className="text-slate-500 text-sm leading-relaxed"
-                        >
+                        <p className="text-slate-500 text-sm leading-relaxed">
                           {solution.description}
                         </p>
                       </div>
@@ -224,7 +216,7 @@ const SoftwareSolutions = () => {
           <div className="flex justify-center items-center gap-6">
             <div className="h-px w-20 bg-gradient-to-r from-transparent via-violet-400 to-transparent" />
             <p className="text-slate-600 text-lg font-medium">
-              متكامل • قابل للتوسع • جاهز للمؤسسات
+              متكامل • احترافي • جاهز للمؤسسات
             </p>
             <div className="h-px w-20 bg-gradient-to-r from-transparent via-purple-400 to-transparent" />
           </div>

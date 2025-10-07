@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { posts } from '@/app/blog/posts'
+import Image from "next/image";
+import Link from "next/link";
+import { posts } from "@/app/blog/posts";
 
 export default function BlogIndexPage() {
   return (
@@ -9,10 +9,10 @@ export default function BlogIndexPage() {
         <div className="max-w-6xl mx-auto">
           <header className="text-center mb-14 sm:mb-16 md:mb-20">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold uppercase tracking-tight">
-              Blog
+              المدونة
             </h1>
             <p className="mt-4 text-base sm:text-lg md:text-xl font-light tracking-wide text-black/80 dark:text-white/80">
-              Insights on CRM, ERP, POS, and HR for Algerian businesses.
+              رؤى حول أنظمة CRM و ERP و POS و HR للأعمال الجزائرية
             </p>
           </header>
 
@@ -37,13 +37,15 @@ export default function BlogIndexPage() {
                   <h2 className="text-2xl font-black tracking-tight group-hover:opacity-90">
                     {title}
                   </h2>
-                  <p className="mt-2 text-sm text-black/70 dark:text-white/70">{excerpt}</p>
+                  <p className="mt-2 text-sm text-black/70 dark:text-white/70">
+                    {excerpt}
+                  </p>
                   <div className="mt-5">
                     <Link
                       href={`/blog/${slug}`}
                       className="inline-block text-sm font-semibold uppercase tracking-widest hover:underline"
                     >
-                      Read more →
+                      اقرأ المزيد ←
                     </Link>
                   </div>
                 </div>
@@ -52,10 +54,11 @@ export default function BlogIndexPage() {
           </div>
 
           <div className="mt-16 text-center text-xs text-black/60 dark:text-white/60">
-            This blog is a static preview. We can switch to MDX or a CMS anytime.
+            هذه المدونة معاينة ثابتة. يمكننا التبديل إلى MDX أو نظام إدارة محتوى
+            في أي وقت
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }

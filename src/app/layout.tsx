@@ -10,9 +10,9 @@ const tajawal = Tajawal({
 });
 
 export const metadata: Metadata = {
-  title: "مشروعي ناجح مع كابيتال | Capital Systems",
+  title: "نجاح مشروعك يبدأ من كابيتال | Capital Systems",
   description:
-    "وجهتك الأولى للإدارة الحديثة والتسيير الذكي - حلول متكاملة تشمل: أجهزة وعتاد التسيير، برامج إدارة متخصصة، تطوير مواقع وتطبيقات، استشارات وتكوين | Your destination for modern management and smart operations",
+    "شريكك الأول في الإدارة الحديثة والتحول الرقمي - نقدم حلولاً متكاملة تشمل: أجهزة ومعدات التسيير الاحترافية، أنظمة إدارية متخصصة، تطوير مواقع وتطبيقات متقدمة، استشارات وتدريب احترافي | Your trusted partner for modern management and digital transformation",
 };
 
 export default async function RootLayout({

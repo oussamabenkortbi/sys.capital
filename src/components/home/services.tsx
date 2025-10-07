@@ -77,51 +77,45 @@ const Services = () => {
             </div>
 
             <Heading level={2} gradient className="group">
-              <span
-                className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-white transform transition-all duration-500 group-hover:scale-105"
-              >
+              <span className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-white transform transition-all duration-500 group-hover:scale-105">
                 خدماتنا
                 <span className="mx-3 bg-gradient-to-r from-sky-600 via-violet-600 to-purple-600 bg-clip-text text-transparent font-black">
-                  المتكاملة
+                  الاحترافية
                 </span>
               </span>
             </Heading>
 
             <div className="max-w-4xl mx-auto space-y-4">
-              <p
-                className="text-xl sm:text-2xl text-slate-600 dark:text-slate-400 font-light leading-relaxed font-inter"
-              >
+              <p className="text-xl sm:text-2xl text-slate-600 dark:text-slate-400 font-light leading-relaxed font-inter">
                 <span className="font-semibold bg-gradient-to-r from-sky-600 to-violet-600 bg-clip-text text-transparent">
-                  حلول شاملة
+                  حلول تقنية متكاملة
                 </span>{" "}
-                للويب، الموبايل، التكامل، والدعم الفني
+                للمواقع الإلكترونية، تطبيقات الجوال، التكامل، والدعم الفني
               </p>
 
               {/* Service type indicators */}
-              <div
-                className="flex flex-wrap justify-center items-center gap-6 mt-6 text-sm font-medium"
-              >
+              <div className="flex flex-wrap justify-center items-center gap-6 mt-6 text-sm font-medium">
                 <div className="flex items-center space-x-2">
                   <span className="text-slate-600 dark:text-slate-400 font-inter">
-                    التطوير
+                    تطوير الويب
                   </span>
                   <div className="w-3 h-3 rounded-full bg-sky-400"></div>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-slate-600 dark:text-slate-400 font-inter">
-                    الموبايل
+                    تطبيقات الجوال
                   </span>
                   <div className="w-3 h-3 rounded-full bg-green-400"></div>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-slate-600 dark:text-slate-400 font-inter">
-                    التكامل
+                    تكامل الأنظمة
                   </span>
                   <div className="w-3 h-3 rounded-full bg-amber-400"></div>
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-slate-600 dark:text-slate-400 font-inter">
-                    الدعم
+                    الدعم الفني
                   </span>
                   <div className="w-3 h-3 rounded-full bg-purple-400"></div>
                 </div>
@@ -180,18 +174,14 @@ const Services = () => {
 
                       {/* Enhanced title typography */}
                       <div className="flex-1 space-y-2">
-                        <h3
-                          className="text-2xl sm:text-3xl font-black tracking-tight leading-tight"
-                        >
+                        <h3 className="text-2xl sm:text-3xl font-black tracking-tight leading-tight">
                           <GradientText className="bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-300 bg-clip-text text-transparent group-hover:from-violet-600 group-hover:to-purple-600 transition-all duration-300">
                             {title}
                           </GradientText>
                         </h3>
 
                         {/* Enhanced subtitle */}
-                        <h4
-                          className="text-sm sm:text-base font-bold tracking-wide text-slate-500 dark:text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors duration-300 font-inter"
-                        >
+                        <h4 className="text-sm sm:text-base font-bold tracking-wide text-slate-500 dark:text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300 transition-colors duration-300 font-inter">
                           {sub}
                         </h4>
                       </div>
@@ -199,9 +189,7 @@ const Services = () => {
 
                     {/* Enhanced description */}
                     <div className="space-y-4">
-                      <p
-                        className="text-lg sm:text-xl font-light leading-relaxed text-slate-600 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-300 font-inter"
-                      >
+                      <p className="text-lg sm:text-xl font-light leading-relaxed text-slate-600 dark:text-slate-400 group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-300 font-inter">
                         {description.split(", ").map((tech, index, array) => (
                           <span key={index}>
                             <span className="font-medium text-slate-800 dark:text-slate-200">
@@ -257,12 +245,10 @@ const Services = () => {
         <div className="text-center mt-16 sm:mt-20 space-y-6">
           <div className="flex justify-center items-center space-x-8">
             <div className="h-px w-24 bg-gradient-to-r from-transparent via-sky-300 to-transparent"></div>
-            <p
-              className="text-lg font-inter text-slate-600 dark:text-slate-400 font-light"
-            >
+            <p className="text-lg font-inter text-slate-600 dark:text-slate-400 font-light">
               <span className="font-semibold">شامل</span> •{" "}
               <span className="font-semibold">موثوق</span> •{" "}
-              <span className="font-semibold">قابل للتوسع</span>
+              <span className="font-semibold">احترافي</span>
             </p>
             <div className="h-px w-24 bg-gradient-to-r from-transparent via-purple-300 to-transparent"></div>
           </div>

@@ -16,7 +16,7 @@ import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="bg-white dark:bg-black text-black dark:text-white select-text overflow-x-hidden min-h-screen">
+    <div className="bg-white text-right dark:bg-black text-black dark:text-white select-text overflow-x-hidden min-h-screen">
       <Header />
 
       <main className="pt-12">

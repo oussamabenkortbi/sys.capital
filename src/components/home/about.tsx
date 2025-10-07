@@ -46,15 +46,11 @@ const About = () => {
           </div>
 
           <Heading level={2} gradient className="group space-y-2">
-            <span
-              className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-white transform transition-all duration-500 group-hover:scale-105"
-            >
-              🎉 أهلاً وسهلاً بكم في
+            <span className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-900 dark:text-white transform transition-all duration-500 group-hover:scale-105">
+              🎉 مرحباً بكم في
             </span>
-            <span
-              className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-800 dark:text-slate-200 transform transition-all duration-500 group-hover:scale-105"
-            >
-              مشروعي ناجح مع كابيتال
+            <span className="block text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-slate-800 dark:text-slate-200 transform transition-all duration-500 group-hover:scale-105">
+              عالم النجاح مع كابيتال
             </span>
             <GradientText className="block text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
               <span className="relative">
@@ -70,64 +66,56 @@ const About = () => {
 
         {/* Enhanced description with better typography */}
         <div className="max-w-5xl mx-auto space-y-6">
-          <p
-            className="text-xl sm:text-2xl lg:text-3xl font-light leading-relaxed text-slate-700 dark:text-slate-300 font-inter"
-          >
-            هنا نشاركوكم خبرتنا في{" "}
+          <p className="text-xl sm:text-2xl lg:text-3xl font-light leading-relaxed text-slate-700 dark:text-slate-300 font-inter">
+            نشارككم خبرتنا الواسعة في{" "}
             <span className="font-semibold bg-gradient-to-r from-emerald-700 to-teal-700 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent">
-              الإدارة الحديثة والتسيير الذكي
+              الإدارة الحديثة والتحول الرقمي الذكي
             </span>
           </p>
 
-          <p
-            className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-light leading-relaxed font-inter"
-          >
-            💡 باش كل صاحب مشروع يقدر يطوّر خدمتو بخطوات بسيطة وواضحة
+          <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-light leading-relaxed font-inter">
+            💡 لنساعد كل صاحب مشروع على تطوير أعماله بخطوات واضحة وفعّالة
           </p>
 
           {/* Enhanced service breakdown */}
           <div className="space-y-4 mt-8">
-            <p
-              className="text-xl font-semibold text-slate-800 dark:text-slate-200"
-            >
-              📦 نوفر حلول عملية تشمل:
+            <p className="text-xl font-semibold text-slate-800 dark:text-slate-200">
+              📦 نقدم حلولاً عملية متكاملة تشمل:
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 px-6 py-3 rounded-full backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-700/50">
                 <span className="text-2xl">🖥️</span>
                 <span className="text-slate-700 dark:text-slate-300 font-inter">
-                  أجهزة وعتاد التسيير (POS وأنظمة المحاسبة)
+                  أجهزة ومعدات احترافية (أنظمة POS ومعدات المحاسبة)
                 </span>
               </div>
               <div className="flex items-center gap-3 bg-gradient-to-r from-teal-100 to-cyan-100 dark:from-teal-900/30 dark:to-cyan-900/30 px-6 py-3 rounded-full backdrop-blur-sm border border-teal-200/50 dark:border-teal-700/50">
                 <span className="text-2xl">💼</span>
                 <span className="text-slate-700 dark:text-slate-300 font-inter">
-                  برامج إدارة مخصصة لمختلف القطاعات
+                  أنظمة إدارية متطورة لجميع القطاعات
                 </span>
               </div>
               <div className="flex items-center gap-3 bg-gradient-to-r from-cyan-100 to-emerald-100 dark:from-cyan-900/30 dark:to-emerald-900/30 px-6 py-3 rounded-full backdrop-blur-sm border border-cyan-200/50 dark:border-cyan-700/50">
                 <span className="text-2xl">🌐</span>
                 <span className="text-slate-700 dark:text-slate-300 font-inter">
-                  تطوير مواقع وتطبيقات للأعمال
+                  تطوير مواقع وتطبيقات عصرية للأعمال
                 </span>
               </div>
               <div className="flex items-center gap-3 bg-gradient-to-r from-emerald-100 to-teal-100 dark:from-emerald-900/30 dark:to-teal-900/30 px-6 py-3 rounded-full backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-700/50">
                 <span className="text-2xl">🎓</span>
                 <span className="text-slate-700 dark:text-slate-300 font-inter">
-                  تكوين واستشارات في الرقمنة والتسيير المالي
+                  استشارات وتدريب متخصص في التحول الرقمي والإدارة المالية
                 </span>
               </div>
             </div>
           </div>
 
-          <p
-            className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-light leading-relaxed font-inter"
-          >
-            في هاذي الصفحة راح نمدو{" "}
+          <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 font-light leading-relaxed font-inter">
+            نقدم لكم من خلال هذه المنصة{" "}
             <span className="font-semibold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mx-1">
-              نصائح قيمة في إدارة وتسيير المشاريع
+              نصائح قيّمة في إدارة وتطوير المشاريع
             </span>{" "}
-            ونوعدوكم بلي مانبخلوكمش بحتى معلومة
+            ونلتزم بمشاركتكم كل ما يفيد ويطور أعمالكم
           </p>
         </div>
 
@@ -137,21 +125,21 @@ const About = () => {
             {
               Icon: Building2,
               value: "100+",
-              label: "Happy Clients",
+              label: "عميل سعيد",
               color: "emerald",
               gradient: "from-emerald-500 to-teal-500",
             },
             {
               Icon: Award,
               value: "5+",
-              label: "Years Experience",
+              label: "سنوات خبرة",
               color: "teal",
               gradient: "from-teal-500 to-cyan-500",
             },
             {
               Icon: Headphones,
               value: "24/7",
-              label: "Support",
+              label: "دعم متواصل",
               color: "cyan",
               gradient: "from-cyan-500 to-emerald-500",
             },
@@ -216,11 +204,7 @@ const About = () => {
                 <span
                   className={`text-xs font-medium text-${color}-700 dark:text-${color}-300 font-inter`}
                 >
-                  {index === 0
-                    ? "Trusted"
-                    : index === 1
-                      ? "Experienced"
-                      : "Available"}
+                  {index === 0 ? "موثوق" : index === 1 ? "محترف" : "متاح"}
                 </span>
               </div>
             </div>
@@ -231,10 +215,8 @@ const About = () => {
         <div className="text-center space-y-6 pt-8">
           <div className="flex justify-center items-center space-x-8">
             <div className="h-px w-24 bg-gradient-to-r from-transparent via-emerald-300 to-transparent"></div>
-            <p
-              className="text-lg font-inter text-slate-600 dark:text-slate-400 font-light"
-            >
-              📣 تابعونا ودعمونا 🚀
+            <p className="text-lg font-inter text-slate-600 dark:text-slate-400 font-light">
+              📣 تواصلوا معنا وكونوا جزءاً من نجاحنا 🚀
             </p>
             <div className="h-px w-24 bg-gradient-to-r from-transparent via-teal-300 to-transparent"></div>
           </div>
@@ -242,10 +224,8 @@ const About = () => {
           {/* Company founding highlight */}
           <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/30 px-6 py-3 rounded-full backdrop-blur-sm border border-emerald-200/50 dark:border-emerald-700/50">
             <div className="w-2 h-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 animate-pulse"></div>
-            <span
-              className="text-sm font-medium text-emerald-700 dark:text-emerald-300 font-inter"
-            >
-              جزائري وفخور 🇩🇿 • تأسس 2020
+            <span className="text-sm font-medium text-emerald-700 dark:text-emerald-300 font-inter">
+              شركة جزائرية 🇩🇿 • تأسست عام 2020
             </span>
           </div>
         </div>

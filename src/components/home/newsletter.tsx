@@ -27,7 +27,7 @@ const Newsletter = () => {
     const trimmed = email.trim().toLowerCase();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(trimmed)) {
-      setError("Please enter a valid email address.");
+      setError("يرجى إدخال عنوان بريد إلكتروني صحيح.");
       return;
     }
 
@@ -40,7 +40,7 @@ const Newsletter = () => {
       .then(async (res) => {
         const data = await res.json().catch(() => ({}));
         if (!res.ok) {
-          throw new Error(data?.error || "Subscription failed");
+          throw new Error(data?.error || "فشل الاشتراك");
         }
         setSubmitted(true);
         setEmail("");
@@ -49,7 +49,7 @@ const Newsletter = () => {
         const message =
           err instanceof Error
             ? err.message
-            : "Something went wrong. Please try again later.";
+            : "حدث خطأ ما. يرجى المحاولة مرة أخرى لاحقاً.";
         setError(message);
       })
       .finally(() => setLoading(false));
@@ -74,18 +74,14 @@ const Newsletter = () => {
             <span>ابق على اطلاع</span>
           </Heading>
         </div>
-        <p
-          className="text-base sm:text-lg lg:text-xl font-light tracking-wide mb-8 sm:mb-10 lg:mb-12 max-w-2xl mx-auto text-black/80 dark:text-white/80"
-        >
+        <p className="text-base sm:text-lg lg:text-xl font-light tracking-wide mb-8 sm:mb-10 lg:mb-12 max-w-2xl mx-auto text-black/80 dark:text-white/80">
           📧 اشترك في نشرتنا البريدية للحصول على آخر التحديثات حول إصدارات
           البرامج، عروض الأجهزة، وحلول الأعمال
         </p>
 
         {submitted ? (
           <div className="space-y-4">
-            <p
-              className="text-2xl font-semibold tracking-wide text-green-600 dark:text-green-400"
-            >
+            <p className="text-2xl font-semibold tracking-wide text-green-600 dark:text-green-400">
               شكراً لاشتراكك! 🎉
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-400">
@@ -127,9 +123,7 @@ const Newsletter = () => {
                 {error}
               </p>
             )}
-            <p
-              className="mt-3 text-xs text-gray-600 dark:text-gray-400"
-            >
+            <p className="mt-3 text-xs text-gray-600 dark:text-gray-400">
               نحترم خصوصيتك. يمكنك إلغاء الاشتراك في أي وقت
             </p>
           </form>

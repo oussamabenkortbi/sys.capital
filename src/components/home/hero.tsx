@@ -38,10 +38,8 @@ const Hero = () => {
         {/* Enhanced heading with dramatic typography */}
         <div className="space-y-2">
           <Heading level={1} gradient className="mb-6 group">
-            <span
-              className="block text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white transform transition-all duration-700 group-hover:scale-105"
-            >
-              مشروعي ناجح مع
+            <span className="block text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white transform transition-all duration-700 group-hover:scale-105">
+              نجاح مشروعك يبدأ من
             </span>
 
             <div className="relative mt-6">
@@ -87,28 +85,24 @@ const Hero = () => {
 
         {/* Enhanced subtitle with better typography */}
         <div className="relative max-w-4xl mx-auto">
-          <p
-            className="font-light text-xl sm:text-2xl lg:text-3xl tracking-wide text-slate-700 dark:text-slate-300 leading-relaxed font-inter"
-          >
-            ✨ وجهتك الأولى للإدارة الحديثة والتسيير الذكي
+          <p className="font-light text-xl sm:text-2xl lg:text-3xl tracking-wide text-slate-700 dark:text-slate-300 leading-relaxed font-inter">
+            ✨ شريكك الموثوق في الإدارة الحديثة والتحول الرقمي
           </p>
-          <p
-            className="font-light text-lg sm:text-xl lg:text-2xl tracking-wide text-slate-600 dark:text-slate-400 leading-relaxed font-inter mt-4"
-          >
-            حلول متكاملة تشمل:
+          <p className="font-light text-lg sm:text-xl lg:text-2xl tracking-wide text-slate-600 dark:text-slate-400 leading-relaxed font-inter mt-4">
+            نوفر لك حلولاً متكاملة تشمل:
           </p>
           <div className="mt-4 space-y-2">
             <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
-              🖥️ أجهزة وعتاد التسيير والإعلام الآلي
+              🖥️ أجهزة ومعدات التسيير الاحترافية
             </p>
             <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
-              💡 برامج إدارة متخصصة لمختلف القطاعات
+              💡 أنظمة إدارية متطورة لجميع القطاعات
             </p>
             <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
-              🌐 تطوير مواقع وتطبيقات احترافية للأعمال
+              🌐 تطوير مواقع وتطبيقات عصرية للأعمال
             </p>
             <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
-              🎓 استشارات ودورات تكوينية في الإدارة، والتسيير
+              🎓 استشارات وبرامج تدريبية متخصصة
             </p>
           </div>
         </div>
@@ -136,7 +130,7 @@ const Hero = () => {
                   <Rocket className="w-5 h-5" aria-hidden="true" />
                 </div>
               </div>
-              <span className="font-inter">اكتشف البرامج 🚀</span>
+              <span className="font-inter">اكتشف الأنظمة 🚀</span>
             </a>
           </Button>
           {/* Button glow effect */}

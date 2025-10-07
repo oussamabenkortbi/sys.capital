@@ -18,14 +18,12 @@ const CTA = () => {
       <div className="relative max-w-6xl mx-auto">
         <div className="mb-6 sm:mb-8">
           <Heading level={2} gradient>
-            <span>جاهز لتطوير مشروعك؟</span>
+            <span>هل أنت مستعد لتطوير مشروعك؟</span>
           </Heading>
         </div>
-        <p
-          className="text-base sm:text-lg md:text-xl font-light mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto tracking-wide text-white/90"
-        >
-          🚀 ابدأ رحلة النجاح مع كابيتال - حلول متكاملة في الإدارة، التسيير،
-          والتجهيزات المتخصصة
+        <p className="text-base sm:text-lg md:text-xl font-light mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto tracking-wide text-white/90">
+          🚀 ابدأ رحلة النجاح معنا - حلول متكاملة في الإدارة الحديثة والتحول
+          الرقمي ومعدات الأعمال الاحترافية
         </p>
         <Button asChild size="lg">
           <a href="#contact" className="inline-flex items-center gap-2">

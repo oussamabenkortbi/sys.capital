@@ -7,7 +7,7 @@ export function newsletterWelcomeTemplate() {
     <head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>Welcome to Sys.Capital</title>
+      <title>مرحباً بك في Sys.Capital</title>
       <style>
         @media (prefers-color-scheme: dark) {
           .card { background: #0b0b0b !important; color: #f7f7f7 !important; }
@@ -31,10 +31,10 @@ export function newsletterWelcomeTemplate() {
               </tr>
               <tr>
                 <td style="padding:0 8px 8px 8px;">
-                  <div class="card" style="background:#ffffff;border-radius:16px;padding:32px;box-shadow:0 1px 2px rgba(0,0,0,0.05);">
-                    <h1 style="margin:0 0 12px 0;font-size:28px;line-height:1.2;">Welcome 👋</h1>
-                    <p style="margin:0 0 16px 0;font-size:16px;line-height:1.6;">Thanks for subscribing to <strong>Sys.Capital</strong>. You’ll receive product updates, articles, and offers crafted to help Algerian businesses grow with CRM, ERP, POS, and HR solutions.</p>
-                    <p style="margin:0 0 24px 0;font-size:16px;line-height:1.6;">To ensure delivery, please add this email to your contacts.</p>
+                  <div class="card" style="background:#ffffff;border-radius:16px;padding:32px;box-shadow:0 1px 2px rgba(0,0,0,0.05);direction:rtl;">
+                    <h1 style="margin:0 0 12px 0;font-size:28px;line-height:1.2;">مرحباً بك 👋</h1>
+                    <p style="margin:0 0 16px 0;font-size:16px;line-height:1.6;">شكراً لاشتراكك في <strong>Sys.Capital</strong>. ستتلقى تحديثات المنتجات والمقالات والعروض المصممة لمساعدة الأعمال الجزائرية على النمو من خلال حلول CRM و ERP و POS و HR.</p>
+                    <p style="margin:0 0 24px 0;font-size:16px;line-height:1.6;">لضمان وصول الرسائل، يرجى إضافة هذا البريد الإلكتروني إلى جهات الاتصال الخاصة بك.</p>
                     <div>
                       <a class="button" href="https://sys.capital" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:#0ea5e9;color:#fff;border-radius:9999px;padding:12px 20px;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;">Visit Website</a>
                     </div>
@@ -44,7 +44,7 @@ export function newsletterWelcomeTemplate() {
               </tr>
               <tr>
                 <td style="padding: 16px 8px; text-align: center;">
-                  <div class="muted" style="font-size:12px;color:#6b7280;">© ${new Date().getFullYear()} Sys.Capital. All rights reserved.</div>
+                  <div class="muted" style="font-size:12px;color:#6b7280;">© ${new Date().getFullYear()} Sys.Capital. جميع الحقوق محفوظة.</div>
                 </td>
               </tr>
             </table>
@@ -53,5 +53,5 @@ export function newsletterWelcomeTemplate() {
       </table>
     </body>
   </html>
-  `
+  `;
 }
