@@ -1,9 +1,9 @@
-"use client"
-import Image from 'next/image'
-import { Rocket, Layers } from 'lucide-react'
-import { Heading } from '@/components/typography/heading'
-import { GradientText } from '@/components/typography/gradient-text'
-import { Button } from '@/components/ui/button'
+"use client";
+import Image from "next/image";
+import { Rocket, Layers } from "lucide-react";
+import { Heading } from "@/components/typography/heading";
+import { GradientText } from "@/components/typography/gradient-text";
+import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
@@ -18,78 +18,63 @@ const Hero = () => {
           priority
           className="absolute inset-0 size-full object-cover object-center opacity-40 dark:opacity-30 scale-105 animate-slow-zoom"
         />
-        
+
         {/* Multi-layered gradients for depth */}
         <div className="absolute inset-0 bg-gradient-to-br from-violet-50/80 via-white/90 to-purple-50/80 dark:from-violet-950/40 dark:via-black/85 dark:to-purple-950/40" />
         <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-transparent to-transparent dark:from-black/95 dark:via-transparent dark:to-transparent" />
-        
+
         {/* Animated gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-violet-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-pink-400/20 to-violet-400/20 rounded-full blur-3xl animate-pulse delay-1000" />
-        
+
         {/* Subtle noise texture */}
-        <div className={`absolute inset-0 opacity-[0.015] bg-[url('data:image/svg+xml,%3Csvg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E')]`} />
+        <div
+          className={`absolute inset-0 opacity-[0.015] bg-[url('data:image/svg+xml,%3Csvg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)"/%3E%3C/svg%3E')]`}
+        />
       </div>
 
       {/* Main content with enhanced typography */}
       <div className="relative max-w-6xl px-6 sm:px-8 text-center space-y-8 z-10">
-        
         {/* Enhanced heading with dramatic typography */}
         <div className="space-y-2">
           <Heading level={1} gradient className="mb-6 group">
-            <span className="block text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-slate-900 dark:text-white transform transition-all duration-700 group-hover:scale-105">
-              <span className="inline-block hover:animate-bounce delay-75">B</span>
-              <span className="inline-block hover:animate-bounce delay-100">u</span>
-              <span className="inline-block hover:animate-bounce delay-125">s</span>
-              <span className="inline-block hover:animate-bounce delay-150">i</span>
-              <span className="inline-block hover:animate-bounce delay-175">n</span>
-              <span className="inline-block hover:animate-bounce delay-200">e</span>
-              <span className="inline-block hover:animate-bounce delay-225">s</span>
-              <span className="inline-block hover:animate-bounce delay-250">s</span>
+            <span
+              className="block text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] text-slate-900 dark:text-white transform transition-all duration-700 group-hover:scale-105"
+            >
+              مشروعي ناجح مع
             </span>
-            
-            <span className="block text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-slate-800 dark:text-slate-100 transform transition-all duration-700 group-hover:scale-105 mt-2">
-              <span className="inline-block hover:animate-bounce delay-300">M</span>
-              <span className="inline-block hover:animate-bounce delay-325">a</span>
-              <span className="inline-block hover:animate-bounce delay-350">n</span>
-              <span className="inline-block hover:animate-bounce delay-375">a</span>
-              <span className="inline-block hover:animate-bounce delay-400">g</span>
-              <span className="inline-block hover:animate-bounce delay-425">e</span>
-              <span className="inline-block hover:animate-bounce delay-450">m</span>
-              <span className="inline-block hover:animate-bounce delay-475">e</span>
-              <span className="inline-block hover:animate-bounce delay-500">n</span>
-              <span className="inline-block hover:animate-bounce delay-525">t</span>
-            </span>
-            
+
             <div className="relative mt-6">
               <div className="relative">
                 {/* Border layer - created with multiple text-shadows */}
                 <div className="absolute inset-0">
-                  <span className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[1.1] text-transparent" 
-                        style={{
-                          textShadow: [
-                            '0.5px 0 0 #777',
-                            '-0.5px 0 0 #777',
-                            '0 0.5px 0 #777',
-                            '0 -0.5px 0 #777',
-                            '0.5px 0.5px 0 #777',
-                            '-0.5px -0.5px 0 #777',
-                            '0.5px -0.5px 0 #777',
-                            '-0.5px 0.5px 0 #777',
-                            '0.5px 0.5px 2px rgba(0,0,0,0.2)'
-                          ].join(',')
-                        }}>
-                    Solutions
+                  <span
+                    className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[1.1] text-transparent"
+                    style={{
+                      textShadow: [
+                        "0.5px 0 0 #777",
+                        "-0.5px 0 0 #777",
+                        "0 0.5px 0 #777",
+                        "0 -0.5px 0 #777",
+                        "0.5px 0.5px 0 #777",
+                        "-0.5px -0.5px 0 #777",
+                        "0.5px -0.5px 0 #777",
+                        "-0.5px 0.5px 0 #777",
+                        "0.5px 0.5px 2px rgba(0,0,0,0.2)",
+                      ].join(","),
+                    }}
+                  >
+                    كابيتال
                   </span>
                 </div>
                 {/* Main gradient text */}
                 <GradientText className="relative z-10 text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[1.1] bg-gradient-to-r from-violet-500 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x">
-                  Solutions
+                  كابيتال
                 </GradientText>
               </div>
             </div>
           </Heading>
-          
+
           {/* Decorative elements */}
           <div className="flex justify-center items-center space-x-4 mt-8 mb-8">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-violet-400"></div>
@@ -102,44 +87,56 @@ const Hero = () => {
 
         {/* Enhanced subtitle with better typography */}
         <div className="relative max-w-4xl mx-auto">
-          <p className="font-light text-xl sm:text-2xl lg:text-3xl tracking-wide text-slate-700 dark:text-slate-300 leading-relaxed font-inter">
-            <span className="relative inline-block">
-              <span className="font-medium text-slate-900 dark:text-white">CRM</span>
-              <span className="mx-2 text-violet-500">•</span>
-              <span className="font-medium text-slate-900 dark:text-white">ERP</span>
-              <span className="mx-2 text-purple-500">•</span>
-              <span className="font-medium text-slate-900 dark:text-white">POS</span>
-              <span className="mx-2 text-pink-500">•</span>
-              <span className="font-medium text-slate-900 dark:text-white">HR</span>
-            </span>
-            <br className="sm:hidden" />
-            <span className="block sm:inline mt-2 sm:mt-0 sm:ml-3">
-              systems tailored for 
-              <span className="relative mx-2 font-semibold">
-                <span className="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
-                  ambitious businesses
-                </span>
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-violet-600 to-purple-600 opacity-60"></span>
-              </span>
-            </span>
+          <p
+            className="font-light text-xl sm:text-2xl lg:text-3xl tracking-wide text-slate-700 dark:text-slate-300 leading-relaxed font-inter"
+          >
+            ✨ وجهتك الأولى للإدارة الحديثة والتسيير الذكي
           </p>
+          <p
+            className="font-light text-lg sm:text-xl lg:text-2xl tracking-wide text-slate-600 dark:text-slate-400 leading-relaxed font-inter mt-4"
+          >
+            حلول متكاملة تشمل:
+          </p>
+          <div className="mt-4 space-y-2">
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
+              🖥️ أجهزة وعتاد التسيير والإعلام الآلي
+            </p>
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
+              💡 برامج إدارة متخصصة لمختلف القطاعات
+            </p>
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
+              🌐 تطوير مواقع وتطبيقات احترافية للأعمال
+            </p>
+            <p className="text-base sm:text-lg text-slate-700 dark:text-slate-300">
+              🎓 استشارات ودورات تكوينية في الإدارة، والتسيير
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Enhanced CTA buttons with premium styling */}
       <div className="relative mt-16 sm:mt-20 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 z-10 px-6 sm:px-8">
-        
         {/* Primary CTA */}
         <div className="group relative">
-          <Button asChild size="lg" className="relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-pink-600 hover:from-violet-500 hover:via-purple-500 hover:to-pink-500 border-0 shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105">
-            <a href="#software" className="inline-flex items-center gap-3 text-white font-semibold text-lg tracking-wide relative z-10">
+          <Button
+            asChild
+            size="lg"
+            className="relative overflow-hidden px-8 py-4 rounded-2xl bg-gradient-to-r from-violet-600 via-purple-600 to-pink-600 hover:from-violet-500 hover:via-purple-500 hover:to-pink-500 border-0 shadow-xl hover:shadow-2xl transform transition-all duration-300 hover:scale-105"
+          >
+            <a
+              href="#software"
+              className="inline-flex items-center gap-3 text-white font-semibold text-lg tracking-wide relative z-10"
+            >
               <div className="relative">
-                <Rocket className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110" aria-hidden="true" />
+                <Rocket
+                  className="w-5 h-5 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
+                  aria-hidden="true"
+                />
                 <div className="absolute inset-0 blur-sm opacity-50 group-hover:opacity-100 transition-opacity duration-300">
                   <Rocket className="w-5 h-5" aria-hidden="true" />
                 </div>
               </div>
-              <span className="font-inter">Explore Software</span>
+              <span className="font-inter">اكتشف البرامج 🚀</span>
             </a>
           </Button>
           {/* Button glow effect */}
@@ -148,15 +145,26 @@ const Hero = () => {
 
         {/* Secondary CTA */}
         <div className="group relative">
-          <Button asChild variant="outline" size="lg" className="relative overflow-hidden px-8 py-4 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-purple-300 dark:hover:border-purple-600 bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105">
-            <a href="#services" className="inline-flex items-center gap-3 text-slate-900 dark:text-white font-semibold text-lg tracking-wide relative z-10 group-hover:text-purple-600 dark:group-hover:text-purple-400">
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="relative overflow-hidden px-8 py-4 rounded-2xl border-2 border-slate-200 dark:border-slate-700 hover:border-purple-300 dark:hover:border-purple-600 bg-white/80 dark:bg-black/80 backdrop-blur-sm shadow-lg hover:shadow-xl transform transition-all duration-300 hover:scale-105"
+          >
+            <a
+              href="#services"
+              className="inline-flex items-center gap-3 text-slate-900 dark:text-white font-semibold text-lg tracking-wide relative z-10 group-hover:text-purple-600 dark:group-hover:text-purple-400"
+            >
               <div className="relative">
-                <Layers className="w-5 h-5 transition-transform duration-300 group-hover:-rotate-12 group-hover:scale-110" aria-hidden="true" />
+                <Layers
+                  className="w-5 h-5 transition-transform duration-300 group-hover:-rotate-12 group-hover:scale-110"
+                  aria-hidden="true"
+                />
                 <div className="absolute inset-0 blur-sm opacity-0 group-hover:opacity-50 transition-opacity duration-300 text-purple-500">
                   <Layers className="w-5 h-5" aria-hidden="true" />
                 </div>
               </div>
-              <span className="font-inter">Our Services</span>
+              <span className="font-inter">خدماتنا 💼</span>
             </a>
           </Button>
           {/* Subtle glow for secondary button */}
@@ -172,11 +180,17 @@ const Hero = () => {
       {/* Custom styles for animations */}
       <style jsx>{`
         @keyframes slow-zoom {
-          0%, 100% { transform: scale(1.05); }
-          50% { transform: scale(1.1); }
+          0%,
+          100% {
+            transform: scale(1.05);
+          }
+          50% {
+            transform: scale(1.1);
+          }
         }
         @keyframes gradient-x {
-          0%, 100% {
+          0%,
+          100% {
             background-size: 200% 200%;
             background-position: left center;
           }
@@ -193,7 +207,7 @@ const Hero = () => {
         }
       `}</style>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

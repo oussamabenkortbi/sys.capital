@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
-import { Heading } from '@/components/typography/heading'
-import { Button } from '@/components/ui/button'
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import { Heading } from "@/components/typography/heading";
+import { Button } from "@/components/ui/button";
 
 const CTA = () => {
   return (
@@ -18,20 +18,24 @@ const CTA = () => {
       <div className="relative max-w-6xl mx-auto">
         <div className="mb-6 sm:mb-8">
           <Heading level={2} gradient>
-            Ready to elevate your business?
+            <span>جاهز لتطوير مشروعك؟</span>
           </Heading>
         </div>
-        <p className="text-base sm:text-lg md:text-xl font-light mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto tracking-wide text-white/90">
-          Experience seamless management and growth with sys.capital&#39;s integrated software and hardware solutions.
+        <p
+          className="text-base sm:text-lg md:text-xl font-light mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto tracking-wide text-white/90"
+        >
+          🚀 ابدأ رحلة النجاح مع كابيتال - حلول متكاملة في الإدارة، التسيير،
+          والتجهيزات المتخصصة
         </p>
         <Button asChild size="lg">
           <a href="#contact" className="inline-flex items-center gap-2">
-            Get Started Now <ArrowRight className="size-5" aria-hidden="true" />
+            <span>ابدأ الآن</span>{" "}
+            <ArrowRight className="size-5" aria-hidden="true" />
           </a>
         </Button>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CTA
+export default CTA;

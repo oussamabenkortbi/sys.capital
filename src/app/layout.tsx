@@ -2,15 +2,17 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import { cookies } from "next/headers";
-import { Nunito } from 'next/font/google';
+import { Tajawal } from "next/font/google";
 
-const nunito = Nunito({
-  subsets: ['latin'],
-})
+const tajawal = Tajawal({
+  subsets: ["arabic", "latin"],
+  weight: ["200", "300", "400", "500", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
-  title: "Sys.Capital",
-  description: "Sys.Capital | Software Development Agency",
+  title: "مشروعي ناجح مع كابيتال | Capital Systems",
+  description:
+    "وجهتك الأولى للإدارة الحديثة والتسيير الذكي - حلول متكاملة تشمل: أجهزة وعتاد التسيير، برامج إدارة متخصصة، تطوير مواقع وتطبيقات، استشارات وتكوين | Your destination for modern management and smart operations",
 };
 
 export default async function RootLayout({
@@ -25,13 +27,12 @@ export default async function RootLayout({
     | "dark"
     | "system"
     | undefined;
-  const initialDark = themeCookie === "dark" ? true : themeCookie === "light" ? false : undefined;
+  const initialDark =
+    themeCookie === "dark" ? true : themeCookie === "light" ? false : undefined;
 
   return (
-    <html lang="en" className={initialDark ? "dark" : undefined}>
-      <body
-        className={`${nunito.className} antialiased`}
-      >
+    <html lang="ar" dir="rtl" className={initialDark ? "dark" : undefined}>
+      <body className={`${tajawal.className} antialiased`}>
         {/* Initialize theme from cookie before hydration to avoid FOUC and mismatches */}
         <Script id="theme-cookie-initializer" strategy="beforeInteractive">
           {`
