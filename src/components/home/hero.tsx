@@ -61,15 +61,33 @@ const Hero = () => {
               <span className="inline-block hover:animate-bounce delay-525">t</span>
             </span>
             
-            <GradientText className="block mt-6 text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.9] bg-gradient-to-r from-violet-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
-              <span className="relative">
-                Solutions
-                {/* Text glow effect */}
-                <div className="absolute inset-0 blur-lg opacity-30 bg-gradient-to-r from-violet-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
-                  Solutions
+            <div className="relative mt-6">
+              <div className="relative">
+                {/* Border layer - created with multiple text-shadows */}
+                <div className="absolute inset-0">
+                  <span className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[1.1] text-transparent" 
+                        style={{
+                          textShadow: [
+                            '0.5px 0 0 #777',
+                            '-0.5px 0 0 #777',
+                            '0 0.5px 0 #777',
+                            '0 -0.5px 0 #777',
+                            '0.5px 0.5px 0 #777',
+                            '-0.5px -0.5px 0 #777',
+                            '0.5px -0.5px 0 #777',
+                            '-0.5px 0.5px 0 #777',
+                            '0.5px 0.5px 2px rgba(0,0,0,0.2)'
+                          ].join(',')
+                        }}>
+                    Solutions
+                  </span>
                 </div>
-              </span>
-            </GradientText>
+                {/* Main gradient text */}
+                <GradientText className="relative z-10 text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[1.1] bg-gradient-to-r from-violet-500 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x">
+                  Solutions
+                </GradientText>
+              </div>
+            </div>
           </Heading>
           
           {/* Decorative elements */}

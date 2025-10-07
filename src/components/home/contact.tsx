@@ -224,7 +224,7 @@ const Contact = () => {
                     Message Sent Successfully!
                   </h3>
                   <p className="text-green-600 dark:text-green-400 font-inter">
-                    Thank you for reaching out. We'll get back to you within 2 business hours.
+                    {`Thank you for reaching out. We'll get back to you within 2 business hours.`}
                   </p>
                 </div>
               </div>

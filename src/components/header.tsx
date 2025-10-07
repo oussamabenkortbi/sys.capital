@@ -5,7 +5,6 @@ import { Toggle } from './toggle';
 import { Menu, X } from 'lucide-react';
 import SysCapitalLogo from './home/logo';
 import { Button } from '@/components/ui/button';
-import { GradientText } from '@/components/typography/gradient-text';
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from '@/components/ui/navigation-menu';
 
 const Header = () => {

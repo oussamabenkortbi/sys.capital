@@ -113,9 +113,9 @@ const Testimonials = () => {
                     {/* Enhanced quote text */}
                     <div className="flex-1 space-y-4">
                       <blockquote className="text-xl sm:text-2xl font-light leading-relaxed text-slate-700 dark:text-slate-300 italic group-hover:text-slate-800 dark:group-hover:text-slate-200 transition-colors duration-300 font-inter">
-                        <span className="text-3xl font-bold text-slate-400 dark:text-slate-600 mr-1">"</span>
+                        <span className="text-3xl font-bold text-slate-400 dark:text-slate-600 mr-1">&quot;</span>
                         {quote}
-                        <span className="text-3xl font-bold text-slate-400 dark:text-slate-600 ml-1">"</span>
+                        <span className="text-3xl font-bold text-slate-400 dark:text-slate-600 ml-1">&quot;</span>
                       </blockquote>
                       
                       {/* Quote highlight line */}
