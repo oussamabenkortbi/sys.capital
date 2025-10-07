@@ -119,7 +119,7 @@ const Hero = () => {
                 <span className="bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
                   ambitious businesses
                 </span>
-                <div className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-violet-600 to-purple-600 opacity-60"></div>
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-violet-600 to-purple-600 opacity-60"></span>
               </span>
             </span>
           </p>
